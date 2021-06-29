@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    torch:
+        image: calculator
+        container_name: calculator_container
+        ports:
+           - 18000:8000
+        volumes:
+            - /calculator
