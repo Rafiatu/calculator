@@ -1,4 +1,4 @@
-FROM python:3.9.0-alpine as base
+FROM python:3.9.5-alpine as base
 
 # Setup base image with require tools
 
@@ -25,7 +25,6 @@ COPY ./bin/container ./bin
 
 RUN bin/install
 
-RUN pip install -r requirements.txt
 # Production Like Environment
 
 FROM base as api-prod
