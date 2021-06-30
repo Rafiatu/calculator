@@ -25,6 +25,7 @@ COPY ./bin/container ./bin
 
 RUN bin/install
 
+RUN pip install -r requirements.txt
 # Production Like Environment
 
 FROM base as api-prod
