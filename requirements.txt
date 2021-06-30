@@ -5,6 +5,7 @@ packaging==20.9
 pep517==0.10.0
 pluggy==0.13.1
 py==1.10.0
+python==3.9.5
 pyparsing==2.4.7
 pytest==6.2.4
 toml==0.10.2
