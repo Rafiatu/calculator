@@ -28,6 +28,3 @@ RUN bin/install
 # Production Like Environment
 
 FROM base as api-prod
-
-# Huge image size alert !!!
-RUN bin/manage collectstatic --clear --noinput
