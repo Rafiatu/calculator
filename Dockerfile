@@ -19,6 +19,8 @@ WORKDIR /calculator
 
 COPY Dockerfile ./.env* ./
 
+COPY ./requirements.txt .
+
 COPY ./bin/container ./bin
 
 RUN bin/install

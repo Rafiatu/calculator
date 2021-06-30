@@ -28,8 +28,3 @@ class Calculator:
     def reset_memory(self):
         self.val = 0
         return self.val
-
-
-obj = Calculator()
-obj.val = 81
-print(obj.add(2))

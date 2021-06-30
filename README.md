@@ -6,38 +6,19 @@
 * [Docker Engine and Docker Compose](https://www.docker.com/) : Containerization of the application and services orchestration
 
 ## Description
-
+This package just implements a simple Calculator that can do basic addition, subtraction, multiplication, division and nth root calculation.
+Like most other calculators, this calculator can be reset and cleared of all previous calculation history with the reset method.
 
 ## Getting Started
 
-Using this package is very simple, all you need is to have Git and Docker Engine installed on your machine. Then open up your terminal and run this command `` to install the package.
+Using this package is very simple, all you need is to have Git and Docker Engine installed on your machine. 
+cd into your project, then open up your terminal and run this command `pip install git+https://github.com/Rafiatu/calculator` to install the package and you're good to go!
 
-Change directory into the project folder `cd devsprime-api` and build the base python image used for the project that was specified in ***dockerfile*** by running ` docker build . `
+## Testing
 
-Spin up other services needed for the project that are specified in ***docker-compose.yml*** file by running the command `docker-compose up`. At this moment, your project should be up and running with a warning that *you have unapplied migrations*.
+This package has a pytest embedded in it and can be run with the following command: `python -m pytest tests/`
 
-Open up another terminal and run this command `docker-compose exec api python project/manage.py makemigrations` for creating new migrations based on the models defined and also run `docker compose exec api python project/manage.py migrate` to apply migrations.
-
-In summary, these are the lists of commands to run in listed order, to start up the project.
-
-```docker
-1. git clone https://github.com/decadevs/devsprime-api.git
-2. cd devsprime-api
-3. docker build .
-4. docker-compose up
-5. docker-compose exec api python project/manage.py makemigrations
-6. docker-compose exec api python project/manage.py migrate
-```
-
-## Running Tests
-
-Currently, truthy tests has been provided in each of the application defined in the project, before running the tests with the following command make sure that your api service is up and running.
-
-```docker
-docker-compose exec api python project/manage.py test
-```
 
 ## License
 
-The MIT License - Copyright (c) 2020 - Rafihatu Bello
-
+The MIT License - Copyright (c) 2021 - Rafihatu Bello
