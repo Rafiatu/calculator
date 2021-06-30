@@ -16,7 +16,7 @@ cd into your project, then open up your terminal and run this command `pip insta
 
 ## Testing
 
-This package has pytest embedded in it and can be run with the following command: `python -m pytest tests/`
+This package has pytest embedded in it and can be run with the following command `python -m pytest tests/`
 
 
 ## License
