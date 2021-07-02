@@ -19,9 +19,21 @@ Calculator contains 6 methods which are add(), subtract(), multiply(), divide(),
 The first 4 are self explantory and take in the number to be calculated by.
 root() takes in the desired root number. reset_memory() takes in no arguments and is used to clear the calculator history and reset the value to 0
 
+Example:
+```
+    from calculator import Calculator
+    calculator = Calculator()
+    calculator.add(20)
+    calculator.subtract(5)
+    calculator.divide(3)
+    calculator.multiply(5)
+    calculator.root(2) -> 5
+    calculate.reset_memory() -> 0
+```
+
 ## Testing
 
-This package has pytest embedded in it and can be run with the following command `python -m pytest tests/`
+This package has pytest embedded in it and can be run with the following command `python -m pytest tests/` from the root folder
 
 
 ## License

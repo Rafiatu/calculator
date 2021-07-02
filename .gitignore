@@ -1,2 +1,7 @@
 .idea
-__pycache__
+__pycache__/
+.pytest_cache/
+.dist/
+.bin/
+src/calculator_Rafiatu.egg-info
+src/calculator/__pycache__/
